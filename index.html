@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#icon').click(function () {
+                $('ul').addClass('open');
+                $('#icon').addClass('open');
+            });
+        });
+        $(document).ready(function () {
+            $('#menu').click(function () {
+                // $('#icon').addClass('close');
+                // $('ul').addClass('close');
+                $('ul').removeClass('open');
+                $('#icon').removeClass('open');
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <img id=src="bg.jpg"> -->
+    <nav>
+        <img class="logo" src="sm-logo.png">
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" id="menu" href="#">Menu<i class="far fa-window-close hexagon"></i></a></li>
+            <li><a href="#">Relive the unviel<i class="fas fa-play hexagon"></i></a></li>
+            <li><a href="#">AR Experience<i class="fas fa-dice-d6 hexagon"></i></a></li>
+            <li><a href="#">Model Page<i class="fas fa-location-arrow hexagon"></i></a></li>
+            <li><a href="#">Share<i class="fas fa-share-alt hexagon"></i></a></i></li>
+            <li><a href="#">Info<i class="fas fa-info hexagon"></i></a></li>
+        </ul>
+
+    </nav>
+
+</body>
+
+</html>
